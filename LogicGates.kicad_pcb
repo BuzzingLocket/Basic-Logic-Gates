@@ -101,7 +101,7 @@
 	(net 21 "Net-(Q10-C)")
 	(net 22 "Net-(Q11-E)")
 	(net 23 "Net-(Q11-C)")
-	(net 24 "Net-(Q13-C)")
+	(net 24 "Net-(Q14-E)")
 	(net 25 "Net-(Q13-E)")
 	(net 26 "Net-(Q13-B)")
 	(net 27 "Net-(Q14-B)")
@@ -127,7 +127,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -396,7 +396,7 @@
 	(footprint "LED_SMD:LED_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "14c5c910-199c-4ce0-a21f-6a75be51b919")
-		(at 132.2 53.45 180)
+		(at 142.7825 53.6 180)
 		(descr "LED SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED")
 		(property "Reference" "D5"
@@ -579,7 +579,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(uuid "3c8c18f6-a973-4a93-94ce-ae13db36888d")
@@ -1318,7 +1318,7 @@
 			(drill 0.75)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 24 "Net-(Q13-C)")
+			(net 8 "+5V")
 			(pinfunction "C")
 			(pintype "passive")
 			(uuid "9a081941-6943-4209-8348-1e139ac2847f")
@@ -1451,7 +1451,7 @@
 			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 8 "+5V")
+			(net 24 "Net-(Q14-E)")
 			(pintype "passive")
 			(uuid "fce8f246-0ac9-487c-b4a3-4ee2318fbc8c")
 		)
@@ -1460,7 +1460,7 @@
 			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 24 "Net-(Q13-C)")
+			(net 9 "GND")
 			(pintype "passive")
 			(uuid "2dfa073c-eb6e-4f7e-958a-a9bee117093e")
 		)
@@ -2533,7 +2533,7 @@
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "5365b4ce-8dbc-471a-9bf3-8e30566b0493")
-		(at 131.35 63.99 -90)
+		(at 139.55 58.81 -90)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R16"
@@ -2879,7 +2879,7 @@
 			(drill 0.75)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 9 "GND")
+			(net 24 "Net-(Q14-E)")
 			(pinfunction "E")
 			(pintype "passive")
 			(uuid "c7852d98-76f8-4f06-84c4-a52a4c6d1a7d")
@@ -3648,7 +3648,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -5103,7 +5103,7 @@
 			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 9 "GND")
+			(net 24 "Net-(Q14-E)")
 			(pintype "passive")
 			(uuid "4dffcef9-2454-41a2-b7b8-d45fff40885e")
 		)
@@ -5289,7 +5289,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(uuid "a1615626-f9e1-4ba6-89ce-60d5e99c4708")
@@ -6795,7 +6795,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 9 "GND")
-			(pinfunction "MH1")
+			(pinfunction "MH3")
 			(pintype "input")
 			(uuid "8a569fdb-510e-4a6c-8a1f-156eab94c9c2")
 		)
@@ -6807,7 +6807,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 9 "GND")
-			(pinfunction "MH1")
+			(pinfunction "MH3")
 			(pintype "input")
 			(uuid "2526d7e2-1fac-4b7c-b07d-55665fd1878f")
 		)
@@ -6819,7 +6819,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 9 "GND")
-			(pinfunction "MH1")
+			(pinfunction "MH3")
 			(pintype "input")
 			(uuid "3b0f1c84-6620-4d26-b6da-e4ad58649882")
 		)
@@ -6831,7 +6831,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 9 "GND")
-			(pinfunction "MH1")
+			(pinfunction "MH3")
 			(pintype "input")
 			(uuid "d75cd6d3-b658-4f37-a9af-8d18effc1560")
 		)
@@ -9146,30 +9146,6 @@
 			)
 		)
 	)
-	(gr_text "NOR Gate"
-		(at 136.25 65.9 90)
-		(layer "F.SilkS")
-		(uuid "a986df8e-d672-4c94-9c74-93875bbabb61")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.1)
-			)
-			(justify left bottom)
-		)
-	)
-	(gr_text "NAND Gate"
-		(at 129.65 52.8 0)
-		(layer "F.SilkS")
-		(uuid "c7d32246-4eac-4a06-acc9-ed68b2b48403")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.1)
-			)
-			(justify left bottom)
-		)
-	)
 	(segment
 		(start 133.6 67.89)
 		(end 133.6 68.39)
@@ -9660,35 +9636,11 @@
 	)
 	(segment
 		(start 128.85 47.55)
-		(end 133.45 52.15)
-		(width 0.5)
-		(layer "F.Cu")
-		(net 8)
-		(uuid "c7636fb3-0c64-46b7-a0cf-9f81477fc2b6")
-	)
-	(segment
-		(start 128.85 47.55)
 		(end 128.85 51.53)
 		(width 0.5)
 		(layer "F.Cu")
 		(net 8)
 		(uuid "e4dc3ca8-f67a-4120-a7f7-68f8066959a8")
-	)
-	(segment
-		(start 133.45 52.15)
-		(end 133.45 60.65)
-		(width 0.5)
-		(layer "F.Cu")
-		(net 8)
-		(uuid "e600ac99-1458-4d4e-9139-6be8fd818a1c")
-	)
-	(segment
-		(start 131.35 63.48)
-		(end 131.35 62.75)
-		(width 0.5)
-		(layer "F.Cu")
-		(net 8)
-		(uuid "f1074a90-a66b-48b3-9738-31fd6b104dd0")
 	)
 	(segment
 		(start 116.98 32.97)
@@ -9705,14 +9657,6 @@
 		(layer "F.Cu")
 		(net 8)
 		(uuid "f62b014c-dc7f-4b21-a118-2ff90dfd209c")
-	)
-	(segment
-		(start 131.35 62.75)
-		(end 133.45 60.65)
-		(width 0.5)
-		(layer "F.Cu")
-		(net 8)
-		(uuid "fe500b58-15fd-45f3-9c11-90dc0c315abf")
 	)
 	(segment
 		(start 113.48 33.85)
@@ -9875,14 +9819,6 @@
 		(uuid "c459cbb9-f1b0-49ae-a1cc-392a83d72b59")
 	)
 	(segment
-		(start 129.075 63.44)
-		(end 132.685 59.83)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 9)
-		(uuid "c96b1a1c-d01c-4b7f-9337-b7a0d7d3cf15")
-	)
-	(segment
 		(start 132.33 68.61)
 		(end 132.33 67.24)
 		(width 0.2)
@@ -9897,14 +9833,6 @@
 		(layer "F.Cu")
 		(net 9)
 		(uuid "d8d635cf-2e23-4e85-a93f-093be4b63ccb")
-	)
-	(segment
-		(start 132.685 59.83)
-		(end 132.685 53.45)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 9)
-		(uuid "eae33062-ec85-4009-97ac-8355fdd80090")
 	)
 	(segment
 		(start 123.49 33.82)
@@ -9961,14 +9889,6 @@
 		(layers "F.Cu" "B.Cu")
 		(net 9)
 		(uuid "ac38d047-76f8-4c62-b86b-5d73d655e396")
-	)
-	(via
-		(at 132.685 59.83)
-		(size 0.6)
-		(drill 0.3)
-		(layers "F.Cu" "B.Cu")
-		(net 9)
-		(uuid "b21c3946-ff80-4bbb-8d11-dbd7ac92ab93")
 	)
 	(segment
 		(start 122.82 33.15)
